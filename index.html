@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECCO LA TUA SFIDA VINCENTE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+            background-color: #ffffff;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #ff6600;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            margin-top: 30px;
+        }
+        label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            font-size: 16px;
+        }
+        input, select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #ff6600;
+            color: #ffffff;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+<body>
+<nav style="background-color: #333; padding: 10px; text-align: center;">
+    <a href="index.html" style="color: white; text-decoration: none; margin: 0 15px;">Home</a>
+    <a href="seconda_pagina.html" style="color: white; text-decoration: none; margin: 0 15px;">Privacy Policy</a>
+</nav>
+
+    <div class="container">
+        <h1>ECCO LA TUA SFIDA VINCENTE</h1>
+        <h2>PROVA A VINCERE COUPON ESCLUSIVI DEI MIGLIORI SUPERMERCATI</h2>
+
+        <form action="/submit" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+
+            <label for="cognome">Cognome</label>
+            <input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+
+            <label for="sesso">Sesso</label>
+            <select id="sesso" name="sesso" required>
+                <option value="">Seleziona</option>
+                <option value="uomo">Uomo</option>
+                <option value="donna">Donna</option>
+                <option value="altro">Altro</option>
+            </select>
+
+            <label for="data_nascita">Data di Nascita</label>
+            <input type="date" id="data_nascita" name="data_nascita" required>
+
+            <label>
+                <input type="checkbox" name="iscrizione_newsletter" value="si" required>
+                Preso atto della privacy policy, accetto di iscrivermi alla Newsletter del sito SfidaVincente e di ricevere aggiornamenti sui migliori articoli della settimana.
+            </label>
+
+            <label>
+                <input type="checkbox" name="promozioni_sfidavincente" value="si" required>
+                Dichiaro di aver preso visione della Privacy Policy e acconsento a ricevere da SfidaVincente comunicazioni promozionali su prodotti e servizi offerti da terze parti selezionate.
+            </label>
+
+            <label>
+                <input type="checkbox" name="dati_a_terzi" value="si" required>
+                Accetto che i miei dati personali siano inviati a terzi, che li useranno per inviarmi offerte promozionali tramite email.
+            </label>
+
+            <button type="submit">Iscriviti Ora</button>
+        </form>
+    </div>
+</body>
+</html>
